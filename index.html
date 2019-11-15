@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sinach Pat Profile Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Index.css" />
+    <script src="main.js"></script>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+      <header>
+        <div class="top">
+        <div class="bar">
+          <nav class="thenav">
+            <img src="angela.png" alt="angela picture" width="50px" height="50px">
+            <ul class="navi">
+              <li>About</li>
+              <li>Work</li>
+              <li>Notes</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="details">
+          <h1>I'm Sinach</h1>
+          <h3>A UI/UX and Frontend Developer</h3>
+        </div>
+        </div>
+      </header>
+      <img src="angela.png" alt="angela picture" id="my1">
+      <div class="hi">
+      <h2>Hi.</h2>
+      <pre style="font-size: 15px;">
+           <strong>
+             I'm a web designer/developer based in Toronto, Canada. 
+      I have passion for web design and love to create for web and mobile.
+            </strong>
+      </pre>
+      <hr>
+    </div>
+    <div class="Ican">
+      <div class="what1">
+      <h1>What I can do.</h1>
+      </div>
+      <div class="slideshow-container">
+          <div class="mySlides">
+              <img src="Timbu.png" style="width:100%">
+              <div class="text">Timbu Site</div>
+          </div>
+          <div class="mySlides">
+              <img src="Timbu.png" style="width:100%">
+              <div class="text">Timbu Site</div>
+          </div>
+          <div class="mySlides">
+              <img src="Timbu.png" style="width:100%">
+              <div class="text">Timbu Site</div>
+          </div>
+      </div>
+    </div>
+    <div class="help">
+      <h1>I can help.</h1>
+      <h3>I'm currently available for freelance work.</h3>
+      <pre><p>  
+      If you have a project that you want to get started, think you need my help 
+      with something or just fancy saying hey, then get in touch.
+      </p></pre>
+    </div>
+    <a href="#"><button><i class="fa fa-envelope-o" style="padding-right: 10px;"></i>MESSAGE ME</button></a>
+    <footer>
+      <div class="foot">
+        <ul id="foota">
+          <li>Dribble</li>
+          <li>Twitter</li>
+          <li>Hire Me!</li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+      showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+      showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      }
+    </script>
+</body>
+</html>
